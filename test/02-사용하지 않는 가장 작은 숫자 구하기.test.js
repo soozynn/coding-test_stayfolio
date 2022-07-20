@@ -12,5 +12,11 @@ describe("02. 사용하지 않는 가장 작은 숫자 찾기 테스트", () => 
     expect(solution([6, 1, 2, 3, 4, 5, 0])).to.equal(7);
   });
 
-  it("중복된 숫자가 있는 경우", () => {});
+  it("중복된 숫자가 있는 경우", () => {
+    expect(solution([1, 0, 1, 2])).to.equal(3);
+  });
+
+  it("배열 안의 요소가 음수일 경우", () => {
+    expect(solution([-1, 0, 1, 2])).to.equal(undefined);
+  });
 });
